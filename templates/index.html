@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page_title }}</title>
+
+    <meta name="description" content="All the key Rhythmic AI links in one place." />
+    <link rel="canonical" href="https://links.rhythmicai.co.uk/" />
+
+    <!-- Fonts: Orbitron for headings, Montserrat for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="logo-wrap">
+          <img src="{{ url_for('static', filename='rhythmic_ai_brain.png') }}" alt="Rhythmic AI" class="logo" />
+        </div>
+        <div class="title-words-wrap">
+          <img src="{{ url_for('static', filename='logo_words.png') }}" alt="Rhythmic AI" class="title-words" />
+        </div>
+        <p class="tagline">{{ tagline }}</p>
+      </header>
+
+      <main class="content">
+        <section class="links">
+          {% for link in links %}
+          <a class="link-card" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+            <div class="link-text">
+              <span class="link-label">{{ link.label }}</span>
+              {% if link.description %}
+              <span class="link-description">{{ link.description }}</span>
+              {% endif %}
+            </div>
+            <span class="link-arrow">↗</span>
+          </a>
+          {% else %}
+          <p class="empty">No links are configured yet. Update links.json and reload.</p>
+          {% endfor %}
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span class="footer-text">&copy; {{ 2026 }} Rhythmic AI</span>
+      </footer>
+    </div>
+  </body>
+</html>

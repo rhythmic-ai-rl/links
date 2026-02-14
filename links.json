@@ -1,0 +1,50 @@
+[
+  {
+    "label": "Main Website",
+    "url": "https://rhythmicai.co.uk",
+    "description": "Main Website.",
+    "order": 1
+  },
+  {
+    "label": "CRM System",
+    "url": "https://crm.rhythmicai.co.uk/",  
+    "description": "Central hub for clients, leads, crm tasks and opportunities.",
+    "order": 2
+  },
+  {
+    "label": "AI Receptionist",
+    "url": "https://receptionist.rhythmicai.co.uk/",
+    "description": "Access and manage the AI receptionist.",
+    "order": 3
+ },
+ {
+    "label": "Documentation",
+    "url": "https://documentation.rhythmicai.co.uk/",
+    "description": "Business and system documentation hub.",
+    "order": 4
+ },
+ { 
+    "label": "Project System",
+    "url": "https://project.rhythmicai.co.uk",
+    "description": "Task and project management system for ops and dev ops.",
+    "order": 5
+},
+{
+    "label": "Tooling Portal",
+    "url": "https://tooling.rhythmicai.co.uk",
+    "description": "Internal tools and system utilities.",
+    "order": 6
+},
+{
+    "label": "Demo Store",
+    "url": "https://www.demo.rhythmicai.co.uk/whisky/",
+    "description": "Ecommerce demo showcasing AI assistant.",
+    "order": 7
+},
+{
+  "label": "Automation & Workflows",
+  "url": "https://automation.rhythmicai.co.uk",
+  "description": "Manage Rhythmic AI automations and workflows.",
+  "order": 8
+}
+]
