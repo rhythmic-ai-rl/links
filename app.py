@@ -38,5 +38,11 @@ def index():
     return render_template("index.html", links=links, page_title=page_title, tagline=tagline)
 
 
+@app.route("/robots.txt")
+def robots_txt():
+    """Serve robots.txt from the static folder (disallow all)."""
+    return app.send_static_file("robots.txt")
+
+
 if __name__ == "__main__":  # For local debugging only
     app.run(host="0.0.0.0", port=8000, debug=True)
